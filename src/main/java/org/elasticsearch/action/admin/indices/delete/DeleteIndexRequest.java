@@ -100,7 +100,7 @@ public class DeleteIndexRequest extends MasterNodeOperationRequest<DeleteIndexRe
 
     /**
      * Timeout to wait for the index deletion to be acknowledged by current cluster nodes. Defaults
-     * to <tt>10s</tt>.
+     * to <tt>30s</tt>.
      */
     public TimeValue timeout() {
         return timeout;
@@ -108,7 +108,7 @@ public class DeleteIndexRequest extends MasterNodeOperationRequest<DeleteIndexRe
 
     /**
      * Timeout to wait for the index deletion to be acknowledged by current cluster nodes. Defaults
-     * to <tt>10s</tt>.
+     * to <tt>30s</tt>.
      */
     public DeleteIndexRequest timeout(TimeValue timeout) {
         this.timeout = timeout;
@@ -117,7 +117,7 @@ public class DeleteIndexRequest extends MasterNodeOperationRequest<DeleteIndexRe
 
     /**
      * Timeout to wait for the index deletion to be acknowledged by current cluster nodes. Defaults
-     * to <tt>10s</tt>.
+     * to <tt>30s</tt>.
      */
     public DeleteIndexRequest timeout(String timeout) {
         return timeout(TimeValue.parseTimeValue(timeout, null));
